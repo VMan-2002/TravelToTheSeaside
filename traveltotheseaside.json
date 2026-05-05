@@ -1,0 +1,18 @@
+{
+	"id": "TravelToTheSeaside",
+	"name": "Travel to the Seaside",
+	"author": ["VMan_2002"],
+    "badge_colour": "0077ff",
+	"description": "An example of TopUpLib's Universe Travel. Travel to the Seaside and meet exclusive Jokers, Consumables and Boss Blinds!",
+	"prefix": "uv_cside",
+	"main_file": "traveltotheseaside.lua",
+    "version": "0.0.0",
+    "priority": 0,
+    "dependencies": [
+        "Steamodded (>=1.0.0~ALPHA-1424a)",
+        "Lovely (>=0.6.0)",
+        "TopUpLib"
+    ],
+    "conflicts": [
+    ]
+}
