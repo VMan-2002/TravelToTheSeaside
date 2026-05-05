@@ -5,7 +5,18 @@ SMODS.Atlas {
 	py = 95
 }
 
-SMODS.Joker {
+local pool = {
+	{uv_cside_common = true, uv_cside_exclusive = true},
+	{uv_cside_uncommon = true, uv_cside_exclusive = true},
+	{uv_cside_rare = true, uv_cside_exclusive = true},
+	{uv_cside_legendary = true}
+}
+local function Joker(d)
+	d.pools = pool[d.rarity]
+	SMODS.Joker(d)
+end
+
+Joker {
 	key = "coral",
 	atlas = "jokers",
 	pos = {x = 0, y = 0},
@@ -14,7 +25,7 @@ SMODS.Joker {
 	loc_vars = topuplib.simpleLocVars({"mult"})
 }
 
-SMODS.Joker {
+Joker {
 	key = "tidepool",
 	atlas = "jokers",
 	pos = {x = 1, y = 0},
@@ -23,7 +34,7 @@ SMODS.Joker {
 	loc_vars = topuplib.simpleLocVars({"money"})
 }
 
-SMODS.Joker {
+Joker {
 	key = "dolphin",
 	atlas = "jokers",
 	pos = {x = 2, y = 0},
@@ -32,14 +43,14 @@ SMODS.Joker {
 	loc_vars = topuplib.simpleLocVars({"handsize", "discards"})
 }
 
-SMODS.Joker {
+Joker {
 	key = "snorkel",
 	atlas = "jokers",
 	pos = {x = 3, y = 0},
 	rarity = 3
 }
 
-SMODS.Joker {
+Joker {
 	key = "pinacolada",
 	atlas = "jokers",
 	pos = {x = 4, y = 0},
@@ -51,7 +62,7 @@ SMODS.Joker {
 	end
 }
 
-SMODS.Joker {
+Joker {
 	key = "coconut",
 	atlas = "jokers",
 	pos = {x = 0, y = 1},
@@ -60,7 +71,7 @@ SMODS.Joker {
 	loc_vars = topuplib.simpleLocVars({"mult", "handsize", "remaining"})
 }
 
-SMODS.Joker {
+Joker {
 	key = "banana",
 	atlas = "jokers",
 	pos = {x = 1, y = 1},
@@ -71,7 +82,7 @@ SMODS.Joker {
 	end
 }
 
-SMODS.Joker {
+Joker {
 	key = "schoolfish",
 	atlas = "jokers",
 	pos = {x = 2, y = 1},
@@ -80,7 +91,7 @@ SMODS.Joker {
 	loc_vars = topuplib.simpleLocVars({"chips", "mult"})
 }
 
-SMODS.Joker {
+Joker {
 	key = "surfer",
 	atlas = "jokers",
 	pos = {x = 3, y = 1},
@@ -89,7 +100,7 @@ SMODS.Joker {
 	loc_vars = topuplib.simpleLocVars({"selection_current", "selection_add"})
 }
 
-SMODS.Joker {
+Joker {
 	key = "lifeguard",
 	atlas = "jokers",
 	pos = {x = 4, y = 1},
@@ -98,7 +109,7 @@ SMODS.Joker {
 	loc_vars = topuplib.simpleLocVars({"hands", "discards"})
 }
 
-SMODS.Joker {
+Joker {
 	key = "palmtree",
 	atlas = "jokers",
 	pos = {x = 0, y = 2},
@@ -111,14 +122,14 @@ SMODS.Joker {
 	end
 }
 
-SMODS.Joker {
+Joker {
 	key = "hula",
 	atlas = "jokers",
 	pos = {x = 1, y = 2},
 	rarity = 2
 }
 
-SMODS.Joker {
+Joker {
 	key = "steve_irwin",
 	atlas = "jokers",
 	pos = {x = 2, y = 2},

@@ -40,7 +40,19 @@ topuplib.universes.seaside = {
 	arrive = function()
 	end,
 	leave = function()
-		
+	end,
+	get_current_pool_args = function(ptype, rarity, legendary, append)
+		print("get_current_pool", ptype, rarity, legendary, append)
+		if ptype == "Joker" then
+			local rand = pseudorandom("uv_cside_pool_joker")
+			if rand > 0.9 then
+				return "uv_cside_rare", "Rare", legendary, append
+			elseif rand > 0.75 then
+				return "uv_cside_uncommon", "Uncommon", legendary, append
+			end
+			return "uv_cside_common", "Common", legendary, append
+		end
+		return ptype, rarity, legendary, append
 	end
 }
 
@@ -76,7 +88,9 @@ topuplib.addFontOption("Caveat Brush", "lua/fonts/caveatbrush")
 local rq = {
 	"pools",
 	"jokers",
-	"levels"
+	"levels",
+	"postcards",
+	"boosters"
 }
 
 for i, v in ipairs(rq) do

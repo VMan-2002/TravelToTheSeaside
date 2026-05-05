@@ -1,63 +1,82 @@
 SMODS.ObjectType {
-	key = "seaside_common",
+	key = "uv_cside_common",
 	default = "j_joker",
 	cards = {
-		"j_greedy_joker",
-		"j_lusty_joker",
-		"j_wrathful_joker",
-		"j_gluttenous_joker",
-		"j_credit_card",
-		"j_dusk",
-		"j_ice_cream",
-		"j_splash",
-		"j_hiker",
-		"j_todo_list",
-		"j_cloud_9",
-		"j_turtle_bean",
-		"j_erosion",
-		"j_diet_cola",
-		"j_ramen",
-		"j_seltzer",
-		"j_campfire",
-		"j_swashbuckler",
-		"j_ramen",
-		"j_rough_gem",
-		"j_bloodstone",
-		"j_arrowhead",
-		"j_onyx_agate",
-		"j_flower_pot",
-		"j_oops",
-		"j_hit_the_road",
-		"j_astronomer",
-		"j_satellite",
-		"j_duo",
-		"j_trio",
-		"j_family",
-		"j_order",
-		"j_tribe",
-		"j_idol",
-		"j_ancient"
+		j_greedy_joker = true,
+		j_lusty_joker = true,
+		j_wrathful_joker = true,
+		j_gluttenous_joker = true,
+		j_credit_card = true,
+		j_dusk = true,
+		j_ice_cream = true,
+		j_splash = true,
+		j_todo_list = true,
+		j_swashbuckler = true,
+		j_astronomer = true,
+		j_satellite = true
 	}
 }
 
 SMODS.ObjectType {
-	key = "seaside_uncommon",
+	key = "uv_cside_uncommon",
 	default = "j_joker",
 	cards = {
+		j_hiker = true,
+		j_cloud_9 = true,
+		j_erosion = true,
+		j_gift = true,
+		j_turtle_bean = true,
+		j_diet_cola = true,
+		j_ramen = true,
+		j_seltzer = true,
+		j_rough_gem = true,
+		j_bloodstone = true,
+		j_arrowhead = true,
+		j_onyx_agate = true,
+		j_flower_pot = true,
+		j_oops = true,
+		j_idol = true
 	}
 }
 
 SMODS.ObjectType {
-	key = "seaside_rare",
+	key = "uv_cside_rare",
 	default = "j_joker",
 	cards = {
+		j_campfire = true,
+		j_hit_the_road = true,
+		j_duo = true,
+		j_trio = true,
+		j_family = true,
+		j_order = true,
+		j_tribe = true,
+		j_ancient = true
 	}
 }
 
 SMODS.ObjectType {
-	key = "seaside_legendary",
+	key = "uv_cside_legendary",
 	default = "j_joker",
+	cards = {}
+}
+
+SMODS.ObjectType {
+	key = "uv_cside_booster",
+	default = "p_arcana_jumbo_1",
 	cards = {
-		"j_uv_cside_steve_irwin"
+		p_arcana_jumbo_1 = true,
+		p_arcana_jumbo_2 = true,
+		p_arcana_mega_1 = true,
+		p_arcana_mega_2 = true,
+		p_standard_mega_1 = true,
+		p_standard_mega_2 = true,
+		p_buffoon_jumbo_1 = true,
+		p_buffoon_mega_1 = true
 	}
+}
+
+SMODS.ObjectType {
+	key = "uv_cside_postcard",
+	default = "j_joker",
+	cards = {}
 }

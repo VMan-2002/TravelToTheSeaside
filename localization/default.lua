@@ -168,6 +168,41 @@ return {
 					"{C:attention}+2{} Win Ante"
 				}
 			}
+		},
+		Other = {
+			p_uv_cside_postcard_norm = {
+				name = "Postcard Pack",
+				text = topuplib.asub {
+					"Select {C:attention}#1#{} of up to",
+					"{C:attention}#2#{} {C:uv_cside_postcard}Postcards{} to",
+					"use immediately"
+				}
+			},
+			p_uv_cside_postcard_jumbo = {
+				name = "Jumbo Postcard Pack",
+				text = topuplib.asub {
+					"Select {C:attention}#1#{} of up to",
+					"{C:attention}#2#{} {C:uv_cside_postcard}Postcards{} to",
+					"use immediately"
+				}
+			},
+			p_uv_cside_postcard_mega = {
+				name = "Mega Postcard Pack",
+				text = topuplib.asub {
+					"Select {C:attention}#1#{} of up to",
+					"{C:attention}#2#{} {C:uv_cside_postcard}Postcards{} to",
+					"use immediately"
+				}
+			}
+		}
+	},
+	misc = {
+		dictionary = {
+			k_uv_cside_postcard = "Postcard",
+			b_uv_cside_postcard_cards = "Postcards"
+		},
+		labels = {
+			uv_cside_postcard = "Postcard",
 		}
 	}
 }
