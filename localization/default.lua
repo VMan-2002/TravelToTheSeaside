@@ -19,7 +19,7 @@ return {
 				name = "Dolphin",
 				text = topuplib.asub {
 					"{_A:handsize:+#1#}",
-					"{_A:discards:#1#}",
+					"{_A:discards:#2#}",
 					"per round"
 				}
 			},
@@ -108,53 +108,53 @@ return {
 				}
 			}
 		},
-		seaside_postcard = {
+		uv_cside_postcard = {
 			c_uv_cside_postcard = {
 				name = "#1#",
 				text = {
 					"Create a {C:attention}Postcard Tag,",
 					"which activates when",
-					"returning to Balatro"
+					"returning to {C:green}Balatro"
 				}
 			}
 		},
 		Tag = {
-			uv_cside_wishyouwerehere = {
+			tag_uv_cside_wishyouwerehere = {
 				name = "Wish you were here!",
 				text = topuplib.asub {
-					"Earn $20 when returning",
-					"to Balatro"
+					"Earn {_A:money:20} when returning",
+					"to {C:green}Balatro"
 				}
 			},
-			uv_cside_surfsup = {
+			tag_uv_cside_surfsup = {
 				name = "Surf's Up!",
 				text = topuplib.asub {
 					"Add {_A:attention:2} levels to your",
 					"most played {C:attention}poker hand",
-					"when returning to Balatro"
+					"when returning to {C:green}Balatro"
 				}
 			},
-			uv_cside_sunsetdate = {
+			tag_uv_cside_sunsetdate = {
 				name = "Sunset Date",
 				text = topuplib.asub {
-					"Create a {_A:dark_edition:Negative} {C:attention}Piña Colada",
-					"when returning to Balatro"
+					"Create a {_A:dark_edition:Negative} {C:attention}Piña Colada{} when",
+					"returning to {C:green}Balatro"
 				}
 			},
-			uv_cside_livingthedream = {
+			tag_uv_cside_livingthedream = {
 				name = "Living the dream!",
 				text = topuplib.asub {
-					"Create a {_A:dark_edition:Negative} {C:blue}Perishable",
+					"Create a {_A:dark_edition:Negative} {V:1}Perishable",
 					"{C:attention}Seaside Joker{} when returning",
-					"to Balatro"
+					"to {C:green}Balatro"
 				}
 			},
-			uv_cside_thoughtofyou = {
+			tag_uv_cside_thoughtofyou = {
 				name = "Thought of you!",
 				text = topuplib.asub {
 					"Create a {_A:common} or {_A:uncommon}",
 					"{C:attention}Joker{} of {C:green}your choice{} when",
-					"returning to Balatro",
+					"returning to {C:green}Balatro",
 					"{C:inactive}(Must have room)"
 				}
 			},
@@ -192,6 +192,32 @@ return {
 					"Select {C:attention}#1#{} of up to",
 					"{C:attention}#2#{} {C:uv_cside_postcard}Postcards{} to",
 					"use immediately"
+				}
+			},
+			undiscovered_uv_cside_postcard = {
+				name = "Not Discovered",
+				text = {
+					"Use this Postcard in",
+					"an unseed run to",
+					"learn what it does"
+				}
+			}
+		},
+		Tarot = {
+			c_uv_cside_ticket_seaside = {
+				name = "Seaside Ticket",
+				text = {
+					"Travel from {C:green}Balatro",
+					"to {C:attention}The Seaside",
+					"{C:inactive}(Must be used in Shop)"
+				}
+			},
+			c_uv_cside_ticket_balatro = {
+				name = "Balatro Ticket",
+				text = {
+					"Travel from {C:attention}The Seaside",
+					"to {C:green}Balatro",
+					"{C:inactive}(Must be used in Shop)"
 				}
 			}
 		}

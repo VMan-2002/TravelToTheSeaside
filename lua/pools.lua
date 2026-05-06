@@ -77,6 +77,6 @@ SMODS.ObjectType {
 
 SMODS.ObjectType {
 	key = "uv_cside_postcard",
-	default = "j_joker",
+	default = "j_uv_cside_steve_irwin",
 	cards = {}
 }

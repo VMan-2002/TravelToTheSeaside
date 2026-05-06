@@ -40,10 +40,14 @@ topuplib.universes.seaside = {
 	arrive = function()
 	end,
 	leave = function()
+		topuplib.universe.background = nil
 	end,
 	get_current_pool_args = function(ptype, rarity, legendary, append)
 		print("get_current_pool", ptype, rarity, legendary, append)
 		if ptype == "Joker" then
+			if legendary then
+				return "uv_cside_legendary", "Legendary", legendary, append
+			end
 			local rand = pseudorandom("uv_cside_pool_joker")
 			if rand > 0.9 then
 				return "uv_cside_rare", "Rare", legendary, append
@@ -83,6 +87,13 @@ SMODS.Sound {
 	end
 }
 
+SMODS.Atlas {
+	key = "undiscovered",
+	path = "undiscovered.png",
+	px = 71,
+	py = 95
+}
+
 topuplib.addFontOption("Caveat Brush", "lua/fonts/caveatbrush")
 
 local rq = {
@@ -90,7 +101,8 @@ local rq = {
 	"jokers",
 	"levels",
 	"postcards",
-	"boosters"
+	"boosters",
+	"ticket"
 }
 
 for i, v in ipairs(rq) do
