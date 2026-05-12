@@ -220,6 +220,18 @@ return {
 					"{C:inactive}(Must be used in Shop)"
 				}
 			}
+		},
+		TopUpLib_Music = {
+			uv_cside_music_seaside_main = {
+				name = "Paradise, Paradise",
+				text = {
+					"Main theme at {C:attention}The Seaside",
+					"{C:inactive}(Placeholder!!!)",
+					"Remixed by NoteBlock & NahTony",
+					"Original by Toby Fox"
+				},
+				center = "j_uv_cside_palmtree"
+			}
 		}
 	},
 	misc = {
