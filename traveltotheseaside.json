@@ -6,6 +6,7 @@
 	"description": "An example of TopUpLib's Universe Travel. Travel to the Seaside and meet exclusive Jokers, Consumables and Boss Blinds!",
 	"prefix": "uv_cside",
 	"main_file": "traveltotheseaside.lua",
+	"icon_path": "modicon.png",
     "version": "0.0.0",
     "priority": 0,
     "dependencies": [
